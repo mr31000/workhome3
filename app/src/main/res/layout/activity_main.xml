@@ -8,10 +8,42 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="420dp"
-        android:layout_height="386dp"
+        android:id="@+id/iv"
+        android:layout_width="422dp"
+        android:layout_height="357dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/image1"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-9dp" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="-62dp" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="155dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="16dp"
+        android:text="The Notebook"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv2"
+        app:layout_constraintTop_toBottomOf="@+id/iv" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="176dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="16dp"
+        android:text="*The Notebook* is about a love that never fades"
+        app:layout_constraintStart_toStartOf="@+id/tv"
+        app:layout_constraintTop_toBottomOf="@+id/tv" />
+
+    <ImageView
+        android:id="@+id/iv2"
+        android:layout_width="135dp"
+        android:layout_height="214dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv"
+        app:layout_constraintTop_toBottomOf="@+id/iv"
+        app:srcCompat="@drawable/image2"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="14dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
